@@ -26,17 +26,15 @@ public class DemoWebAutomation {
 		driver.get("https://www.toolsqa.com/automation-practice-form/");
 
 		driver.manage().window().maximize();
-		
+
 		Thread.sleep(10000);
-		
-		WebElement element=driver.findElement(By.xpath("//img[@alt='close-link']"));
-		//alternative way to click webelement
+
+		WebElement element = driver.findElement(By.xpath("//img[@alt='close-link']"));
+		// alternative way to click webelement
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript ("arguments[0].click();" , element);
-		
-		
-		
-		//driver.switchTo().alert().accept();
+		executor.executeScript("arguments[0].click();", element);
+
+		// driver.switchTo().alert().accept();
 
 		driver.findElement(By.name("firstname")).sendKeys("Fei");
 
@@ -71,7 +69,7 @@ public class DemoWebAutomation {
 		seleniumcommand.selectByVisibleText("WebElement Commands");
 
 		seleniumcommand.selectByVisibleText("Browser Commands");
-
+		System.out.println("testing pass");
 	}
 
 }
