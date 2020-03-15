@@ -24,7 +24,7 @@ public class AmazonActions {
 		
 		ac.click(driver.findElement(By.xpath("//div[@id='nav-flyout-ya-signin']/a"))).build().perform();
 		
-		
+		System.out.println(driver.getTitle());
 	}
 
 }
