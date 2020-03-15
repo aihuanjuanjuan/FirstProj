@@ -18,6 +18,7 @@ public class AAtest {
 		// setup Chrome driver
 //		WebDriverManager.chromedriver().setup();
 		WebDriverManager.firefoxdriver().setup();
+		System.out.println("testing!!!!!!");
 
 		// open Chrome browser
 //		WebDriver driver = new ChromeDriver();
